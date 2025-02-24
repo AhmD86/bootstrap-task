@@ -1,0 +1,29 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+.scale-form:hover , .scale-form1:hover{
+    transform: scale(.9);
+    transition: 0.5s;
+    position: relative;
+}
+.scale-form::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height:100%;
+    width: 100%;
+    transition: 1s;
+    opacity: .2;
+    background-color: rgb(0, 137, 137);
+}
+.scale-form:hover:after{
+    width: 0;
+    height: 0;
+}
+a:hover .first{
+    color: rgb(22, 144, 148);
+    font-size: 22px;
+    font-weight: bold;
+    transition: .5s;
+}
